@@ -1,105 +1,26 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <title>Axel González Carreto CV</title>
-    <link type="text/css" rel="stylesheet" href="reglas.css">
-</head>
-<body>
-    <div class = "a">
-        <h1>Axel González Carreto</h1>
-        <h3>Universitario, estudiando Ing. Tecnologías Computacionales</h3>
-        <ul class="nav">
-            <li><a href="#home">Quién soy</a></li>
-            <li><a href="#codigos">Lenguajes de programación</a></li>
-            <li><a href="#portafolio">Portafolio</a></li>  
-            <li><a href="#hobbies">Hobbies</a></li>
-            <li><a href="#aboutMe">Sobre mí</a></li>
-        </ul>
-    </div >
-    <div id = "home">
-        <h2>Quién soy</h2>
-        <p>Hola, mi nombre es Axel González Carreto, tengo 19 años y actualmente me encuentro en mi 4°semestre de universidad, estoy estudiando para Ing. Tecnologías Computacionales en el Tecnológico de Monterrey CCM.</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora de IMC</title>
+        <link type="text/css" rel="stylesheet" href="reglas.css">
+    </head>
+    <body>
+        <h1>Calculadora de IMC</h1>
         
-        <p>Desde pequeño me ha gustado mucho todo lo relacionado con los Videojuegos, también comparto un gran interés en la Inteligencia Artificial, en IoT y en Hacking. </p>
+        <form onsubmit = "return false" action="">
+            <label for="Peso">Introduce Peso en kg:</label><br>
+            <input type="text" id="peso" placeholder="Ej. 75"\><br><br>
+            <label for="Estatura">Introduce Estatura en m:</label><br>
+            <input type="text" id="estatura" placeholder="Ej. 1.82"\><br><br>
+            <input type="submit" value="Calcular" onclick = "procesarIMC()"\>
+        </form>
         
-        <p>Trabajo duro para poder algun día dejar mi huella en el mundo y en la sociedad, me esfeurzo día a día para poder lograr ese impacto; mientras tanto disfruto del largo viaje que me queda por recorrer mientras trato de ayudar a nuestro planeta y a todos sus seres que la habitan. </p>
-    </div>
-    <div id = "codigos">
-        <h2>Lenguajes de Programación</h2>
-        <img src="codigos.jpg" width="600" height="400">
-    </div>
-    <div id = "portafolio">
-        <h2>Portafolio</h2>
-        <h4>Bacter-Ian</h4>
-        <p>Fecha: 4-5 semestre de preparatoria </p>
-        <p>Bacter-Ian es un videojuego creado en Unity con ayuda de mi quipo de trabajo a lo largo del semestre; siendo este mi primer videojuego. En dicho videojuego, pude aprender y piner aprueba temas desde porgrmacíon, animación, UI y físicas en Unity. El videojuego trata sobre un niño que se contagia de una bacteria, dicha bacteria es la protagonista del juego, siendo su deber, llegar al cerebro; pero para ello, tendra que pasar por tres diferentes niveles y derrotar al jefe final (cerebro).</p>
-        <img src="port1.jpg" width="600" height="400">
-        <h4>Página web para monitorio del aire</h4>
-        <p>Fecha: 3 semestre de universidad </p>
-        <p>En esta activdad, tuve la oportunidad de crear una página web desde cero, aprendiendo html, css y un poco de java; pero no solamente fue la creaión de la pagína web, sino también todo el tema vinculado a bases de datos, ya que hicimos uso de esta para almacenar y hacer querys de y para nuestra página, donde aprendi a usar sql. Además, usando MATLAB-Simulink y Packet Tracer, pudimos conectarnos al servidor de la base de datos para poder lograr el objetivo de simular un monitorio del aire mediante datos en MATLAB-Simulink y Packet Tracer los cuales se subieron a la base de datos del servidor y posteriormente fueron desplegados en la página web. </p>
-        <img src="port2.jpg" width="600" height="400">
-        <h4>La guerra de los bots:ataques ciberneticos</h4>
-        <p>Fecha: 3 semestre de universidad </p>
-        <p>Durante el tercer semestre, tuvimos un reto el cual concistia en saber detectar cuando, como y en donde se estaba posiblemente haciedno un botmaster. Para ello, tuvimos varias entregas parciales donde ibamos poco a poco aprendiendo diferentes estrcuturas de datos y algoritmos fundamnetales; entre ellos puedo destacar algoritmos de busqueda y ordenamiento, listas, listas ligadas, listas doblemente ligadas, árboles binarios, grafos y código hash. </p>
-        <object data="poster.pdf" type="application/pdf" width="750px" height="475px"></object>
-    </div>
-    <div id = "hobbies">
-        <h2>Hobbies</h2>
-        <ul>
-            <li><p>Jugar fútbol</p></li>
-            <li><p>Jugar videojuegos</p></li>
-            <li><p>Escuchar música</p></li>
-            <li><p>Fan del FC Barcelona</p></li>
-        </ul> 
-    </div>
-    <div id = "aboutMe">
-        <h2>Más sobre mi</h2>
-        <table style="width:100%">
-            <tr>
-                <th>TOP 5</th>
-                <th>Peliculas</th> 
-                <th>Series</th>
-                <th>Videojueos</th>
-                <th>Equipos de fútbol</th>
-            </tr> 
-            <tr>
-                <td>1</td>
-                <td>The joker</td>
-                <td>The flash</td>
-                <td>Rocket League</td>
-                <td>FC Barcelona</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Avatar</td>
-                <td>Naruto</td>
-                <td>Halo</td>
-                <td>Manchester City</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Advengers:Endgame</td>
-                <td>Dragon Ball</td>
-                <td>Fifa</td>
-                <td>FC Bayen Munich</td>
-              </tr>
-            <tr>
-                <td>4</td>
-                <td>Jojo Rabbit</td>
-                <td>Los caballeros del zodiaco</td>
-                <td>Call of Duty</td>
-                <td>FC Ajax </td>
-              </tr>
-            <tr>
-                <td>5</td>
-                <td>Coco</td>
-                <td>Sword art online</td>
-                <td>Call of Duty</td>
-                <td>Liverpool FC</td>
-              </tr>
-        </table>
-    </div>
-</body>
+        <p class = "a" id = "IMC"></p>
+        <p id = "dato"></p>
+        <p id = "descripcion"></p>
+        
+        <script src="script.js"></script>
+    </body>
 </html>
