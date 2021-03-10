@@ -1,0 +1,256 @@
+/*-------------PAGINA PRINCIPAL-------------*/
+/*BARRA NAVEGADOR */
+div.navegador {
+    background-image: url("fondoNB.jpg");
+    background-color: #4d4d4d;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 50px;
+    color: #2d486c;
+    text-align: center;
+    font-family: cursive;
+}
+
+ul.nav {
+    background-color: #999999;
+    opacity: 0.8;
+}
+
+ul.nav li {
+    display: inline-block;
+    font-size: 30px;
+    padding: 1% 5%;
+    overflow: hidden;
+}
+
+li a:link {
+    color: white;
+}
+
+li a:visited {
+    color: #6633cc;
+}
+
+li a:hover {
+    color: #2d486c;
+}
+
+/*GENERAL */
+body {
+    background-image: url("fondo6.jpg");
+    margin: 1%;
+    font-family: cursive;
+}
+
+div {
+    text-align: center;
+    margin-top: 3%;
+}
+h4{
+    text-align: center;
+    margin-top: 3%;
+    font-size: 30px;
+    color: #2d486c;
+    font-family: cursive;
+}
+h5{
+    text-align: center;
+    margin-top: 0.2%;
+    font-size: 15px;
+    color: white;
+    font-family: cursive;
+}
+
+/*CONTENEDOR DESCRIPCION*/
+.grid-container1 {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-gap: 10px;
+    margin-top: 2%;
+}
+
+.grid-container1 > div {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+
+/*CONTENEDOR IMAGENES Y DESCRIPCION*/
+p.a {
+    background-color: #2d486c;
+    opacity: 0.8;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    grid-gap: 1%;
+    margin-top: 5%;
+}
+
+.grid-container2 > div {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+
+/*CONTENEDOR Personajes*/
+.grid-container5 {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 20% 20% 20%;
+    grid-gap: 10%;
+    padding: 2%;
+}
+
+.grid-container5 > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+/*PIE DE PAGINA*/
+.grid-container3 {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 0.5%;
+    margin-top: 2%;
+    background-color: #2d486c;
+}
+
+.grid-container3 > div {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    background-color: #2d486c;
+}
+
+/*-------------PAGINA JUEGO-------------*/
+/*GENERAL*/
+h2 {
+    font-size: 30px;
+    color: white;
+    background-color: #2d486c;
+    opacity: 0.8;
+    width: 60%;
+}
+
+/*ENCUESTA*/
+form {
+    background-color: #999999;
+    opacity: 0.8;
+    font-size: 25px;
+    color: #2d486c;
+    padding: 20px;
+    text-align: left;
+}
+
+input {
+    font-size: 15px;
+    color: black;
+    width: 40%;
+}
+
+input.a {
+    /*AÑOS*/
+    font-size: 15px;
+    color: black;
+    width: 8%;
+}
+
+input.b {
+    font-size: 15px;
+    color: black;
+    width: 30%;
+}
+
+input.enviar {
+    background: #2d486c;
+    width: 10%;
+}
+
+select {
+    /*GENERO*/
+    font-size: 15px;
+    width: 25%;
+}
+
+p.enviar {
+    font-size: 20px;
+    color: red;
+}
+
+/*CONTENEDOR ENCUESTA Y ALERTA*/
+.grid-container4 {
+    display: grid;
+    grid-template-columns: 50% 12% 26% 12%;
+    grid-gap: 0.5%;
+    margin-top: 2%;
+}
+
+.grid-container4 > div {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+
+div.centrado {
+    /*TEXTO*/
+    margin-top: 35%;
+}
+
+div.centrado2 {
+    /*IMAGEN*/
+    margin-top: 74%;
+}
+
+/*-------------PAGINA ESTADISTICAS-------------*/
+/*GENERAL*/
+h3 {
+    font-size: 40px;
+    color: white;
+    background-color: #2d486c;
+    opacity: 0.8;
+    text-align: center;
+    overflow: hidden;
+}
+
+div.graficas {
+    margin-left: 15%;
+}
+
+/*-------------PAGINA STEM-------------*/
+/*STEM*/
+.grid-container6 {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 1%;
+    margin-top: 2%;
+}
+
+.grid-container6 > div {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+/*STEM2*/
+.grid-container7 {
+    display: grid;
+    grid-template-columns: 40% 58%;
+    grid-gap: 1%;
+    margin-top: 2%;
+}
+
+.grid-container7 > div {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+/*GENERAL*/
+img.iconos {
+    padding: 5%;
+}
