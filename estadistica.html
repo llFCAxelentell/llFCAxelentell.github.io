@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <title>Página principal</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <audio id="musica" hidden loop preload oncanplay="musicaF()">
+        <source src="WizardAmbience.mp3" type="audio/mpeg">
+        <script src="script.js"></script>
+    </audio>
+
+
+    <div class="navegador">
+        <h1><img src="UISprites.png" alt="decorativo">Medieval Chemist<img src="UISprites.png" alt="decorativo"></h1>
+        <ul class="nav">
+            <li><a href="index.html">Principal</a></li>
+            <li><a href="juego.html">Juega</a></li>
+            <li><a href="estadistica.html">Estadísticas</a></li>
+            <li><a href="stem.html">STEM</a></li>
+        </ul>
+    </div>
+    <div>
+        <h3>¿Te encuentras dentro de los mejores? </h3>
+        <div id="table_div"></div>
+        <script src="scriptTable.js"></script>
+    </div>
+    <div>
+        <h3>¿Quieres saber más sobre Medieval Chemist?
+            Consulta las siguientes gráficas:</h3>
+        <div class = "graficas" id="curve_chart" style="width: 900px; height: 500px;"></div>
+        <script src="scriptGrafica1.js"></script>
+        <br>
+        <div class = "graficas" id="chart_div" style="width: 900px; height: 500px;"></div>
+        <script src="scriptGrafica2.js"></script>
+    </div>
+    <br> <br>
+    
+    <div class="grid-container3">
+        <div>
+            <p>Autores:</p>
+            <p>Yusdivia Molina Román - A01653120 <br> Leonardo Arturo Morales López - A01652673 <br> Rodolfo León Gasca - A01653185 <br> Axel González Carreto - A01652775</p>
+        </div>
+        <div>
+            <p> Para la materia Construcción de Software y Toma de Decisiones (TC2005B) <br> Grupo 442 <br> Del Tecnológico de Monterrey</p>
+        </div>
+        <div>
+            <p>Profesores:</p>
+            <p> José Martín Molina Espinosa<br>
+                Sergio Ruiz Loza<br>
+                Christian Rolando Vallejo Villamil<br><br> Marzo 2021
+            </p>
+        </div>
+    </div>
+</body></html>

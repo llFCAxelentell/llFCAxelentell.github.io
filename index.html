@@ -1,26 +1,131 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Calculadora de IMC</title>
-        <link type="text/css" rel="stylesheet" href="reglas.css">
-    </head>
-    <body>
-        <h1>Calculadora de IMC</h1>
-        
-        <form onsubmit = "return false" action="">
-            <label for="Peso">Introduce Peso en kg:</label><br>
-            <input type="text" id="peso" placeholder="Ej. 75"\><br><br>
-            <label for="Estatura">Introduce Estatura en m:</label><br>
-            <input type="text" id="estatura" placeholder="Ej. 1.82"\><br><br>
-            <input type="submit" value="Calcular" onclick = "procesarIMC()"\>
-        </form>
-        
-        <p class = "a" id = "IMC"></p>
-        <p id = "dato"></p>
-        <p id = "descripcion"></p>
-        
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página principal</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <audio id="musica" hidden preload oncanplay="musicaF()">
+        <source src="ChemistrySound.mp3" type="audio/mpeg">
         <script src="script.js"></script>
-    </body>
+    </audio>
+
+
+    <div class="navegador">
+        <h1><img src="logo1.png" alt="decorativo" width="60" height="60">Medieval Chemist<img src="logo1.png" alt="decorativo" width="60" height="60"></h1>
+        <ul class="nav">
+            <li><a href="index.html">Principal</a></li>
+            <li><a href="juego.html">Juega</a></li>
+            <li><a href="estadistica.html">Estadísticas</a></li>
+            <li><a href="stem.html">STEM</a></li>
+        </ul>
+    </div>
+
+    <div class="grid-container1">
+        <div><img class="a" src="gif1.gif" alt="gif hechicero" width="140" height="120"></div>
+        <div>
+            <p>Bienvenido a Medieval Chemist, en esta ocasión te convertirás en un científico/hechicero de la Edad Media.Tú misión? Fabricar pociones para tratar las enfermedades de tus pueblerinos a causa de una pandemia</p>
+        </div>
+        <div><img class="a" src="gif2.gif" alt="gif pocion" width="70" height="100"></div>
+    </div>
+
+    <div>
+        <iframe width="700" height="500" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+    </div>
+
+
+    <div class="grid-container2">
+        <div>
+            <p class="a">Ayuda a nuestro científico/hechicero a realizar todos los compuestos para ayudar a la gente de su pueblo en sus pedidos, compra los elementos y sé sabio al utilizarlos! </p>
+        </div>
+        <div> <img src="imagen2.png" width="350" height="250" alt="imagen videojuego1"></div>
+        <div> <img src="imagen3.png" width="350" height="250" alt="imagen videojuego2"></div>
+    </div>
+
+    <h4>CONOCE A TUS PUEBLERINOS!!!</h4>
+        <h5>Da click en algo de ellos</h5>
+
+    <div class="grid-container5">
+        <div>
+            <audio id="sonido1" hidden preload>
+                <source src="p1.mp3" type="audio/ogg">
+            </audio>
+            <img src="personaje1.gif" onclick="musicaS(1)" width="150" height="150">
+            
+        </div>
+        <div>
+            <div>
+                <audio id="sonido2" hidden preload>
+                    <source src="p2.mp3" type="audio/ogg">
+                </audio>
+                <img src="personaje2.gif" onclick="musicaS(2)" width="150" height="150">
+
+            </div>
+        </div>
+        <div>
+            <div>
+                <audio id="sonido3" hidden preload>
+                    <source src="p3.mp3" type="audio/ogg">
+                </audio>
+                <img src="personaje3.gif" onclick="musicaS(3)" width="150" height="150">
+
+            </div>
+        </div>
+        <div>
+            <div>
+                <audio id="sonido4" hidden preload>
+                    <source src="p4.mp3" type="audio/ogg">
+                </audio>
+                <img src="personaje4.gif" onclick="musicaS(4)" width="150" height="150">
+
+            </div>
+        </div>
+        <div>
+            <div>
+                <audio id="sonido5" hidden preload>
+                    <source src="p5.mp3" type="audio/ogg">
+                </audio>
+                <img src="personaje5.gif" onclick="musicaS(5)" width="150" height="150">
+
+            </div>
+        </div>
+        <div>
+            <div>
+                <audio id="sonido6" hidden preload>
+                    <source src="p6.mp3" type="audio/ogg">
+                </audio>
+                <img src="personaje6.gif" onclick="musicaS(6)" width="150" height="150">
+
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        <img src="botonjugar.png" width="300" height="200" onclick="location.href='juego.html';">
+    </div>
+
+    <div class="grid-container3">
+        <div>
+            <p>Autores:</p>
+            <p>Yusdivia Molina Román - A01653120 <br> Leonardo Arturo Morales López - A01652673 <br> Rodolfo León Gasca - A01653185 <br> Axel González Carreto - A01652775</p>
+        </div>
+        <div>
+            <p> Para la materia Construcción de Software y Toma de Decisiones (TC2005B) <br> Grupo 442 <br> Del Tecnológico de Monterrey</p>
+        </div>
+        <div>
+            <p>Profesores:</p>
+            <p> José Martín Molina Espinosa<br>
+                Sergio Ruiz Loza<br>
+                Christian Rolando Vallejo Villamil<br><br> Marzo 2021
+            </p>
+        </div>
+    </div>
+
+</body>
+
 </html>

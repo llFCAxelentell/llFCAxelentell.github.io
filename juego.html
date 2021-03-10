@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página principal</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <audio id="musica" hidden loop preload oncanplay="musicaF()">
+        <source src="AMBIENCE_Witch_World.mp3" type="audio/mpeg">
+        <script src="script.js"></script>
+    </audio>
+
+    <div class="navegador">
+        <h1><img src="UISprites.png" alt="decorativo">Medieval Chemist<img src="UISprites.png" alt="decorativo"></h1>
+        <ul class="nav">
+            <li><a href="index.html">Principal</a></li>
+            <li><a href="juego.html">Juega</a></li>
+            <li><a href="estadistica.html">Estadísticas</a></li>
+            <li><a href="stem.html">STEM</a></li>
+        </ul>
+    </div>
+
+    <h2>Antes de jugar, déjanos saber un poco más de tí </h2>
+
+
+    <div class="grid-container4">
+        <div>
+            <form onsubmit="return false" action="">
+                <label for="Nombre">¿Comó te llamas?</label>
+                <input class="b" type="text" id="nombre" placeholder="Ej. Francisco" \><br>
+                <label for="apellido">¿Cuál es tu apellido?</label>
+                <input type="text" id="apellido" placeholder="Ej. González" \><br>
+                <label for="edad">¿Cuántos años tienes?</label>
+                <input class="a" type="number" id="años" min="6" max="80" placeholder="0" \><br>
+                <label for="genero">¿Cuál es tu género?</label>
+
+                <select id="genero">
+                    <option value="" disabled selected>Elige una opcion</option>
+                    <option value="hombre">Hombre</option>
+                    <option value="mujer">Mujer</option>
+                    <option value="otro">Prefiero no decir</option>
+                </select><br>
+
+                <label for="correo">Ingresa un correo: </label>
+                <input type="email" id="correo" placeholder="Ej. francisco517@gmail.com" \><br>
+                <label for="contraseña">Ingresa una contraseña: </label>
+                <input class="b" type="password" id="contraseña" minlength="8" maxlength="16" placeholder="*******" \><br>
+                <label for="nickname">Ingresa un nickname: </label>
+                <input class="b" type="text" id="nickname" placeholder="Ej. paco517" \><br>
+
+                <input class="enviar" type="submit" value="Enviar" onclick="enviarEncuesta()" \>
+                <p class = "enviar"id="enviarDescripcion"></p>
+            </form>
+
+            <p id="enviarDescripcion"></p>
+
+            <script src="script.js"></script>
+        </div>
+        <div class="centrado2"><img src="stop.png" width="100" height="100" alt="imagen stop"></div>
+        <div class="centrado">
+            <p class="a">CUIDADO!! Si es tu primera vez y no te registras, no podras iniciar sesión en el juego y por ende no podras jugar</p>
+        </div>
+        <div class="centrado2"><img src="stop.png" width="100" height="100" alt="imagen stop"></div>
+    </div>
+
+    <div> <img src="imagen3.png" width="500" height="400" alt="imagen videojuego1"></div>
+
+    <div class="grid-container3">
+        <div>
+            <p>Autores:</p>
+            <p>Yusdivia Molina Román - A01653120 <br> Leonardo Arturo Morales López - A01652673 <br> Rodolfo León Gasca - A01653185 <br> Axel González Carreto - A01652775</p>
+        </div>
+        <div>
+            <p> Para la materia Construcción de Software y Toma de Decisiones (TC2005B) <br> Grupo 442 <br> Del Tecnológico de Monterrey</p>
+        </div>
+        <div>
+            <p>Profesores:</p>
+            <p> José Martín Molina Espinosa<br>
+                Sergio Ruiz Loza<br>
+                Christian Rolando Vallejo Villamil<br><br> Marzo 2021
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
