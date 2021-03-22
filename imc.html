@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora de IMC</title>
+        <link type="text/css" rel="stylesheet" href="reglasIMC.css">
+    </head>
+    <body>
+        <h1>Calculadora de IMC</h1>
+        
+        <form onsubmit = "return false" action="">
+            <label for="Peso">Introduce Peso en kg:</label><br>
+            <input type="text" id="peso" placeholder="Ej. 75"\><br><br>
+            <label for="Estatura">Introduce Estatura en m:</label><br>
+            <input type="text" id="estatura" placeholder="Ej. 1.82"\><br><br>
+            <input type="submit" value="Calcular" onclick = "procesarIMC()"\>
+        </form>
+        
+        <p class = "a" id = "IMC"></p>
+        <p id = "dato"></p>
+        <p id = "descripcion"></p>
+        
+        <script src="scriptIMC.js"></script>
+    </body>
+</html>

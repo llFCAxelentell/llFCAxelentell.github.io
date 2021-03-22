@@ -1,0 +1,26 @@
+body{
+    text-align: center;
+}
+h1{
+    font-size: 40px;
+    color: lightblue;
+    text-decoration: underline;
+}
+form{
+    font-size: 28px;
+    color: gray;
+    padding: 20px;
+}
+input{
+    font-size: 20px;
+    color: gray;
+    text-align: center;
+}
+p.a{
+    font-size: 40px;
+    color: lightblue;
+}
+p{
+    font-size: 30px;
+    color: gray;
+}
